@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ec255a;
+}
+
+.container {
+    background: #faedf0;
+    width: 400px;
+    height: 380px;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.container .password {
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    padding: 0 50px 0 20px;
+    background: #292c6d;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.container .password::placeholder {
+    color: #ebebeb;
+}
+
+.container p {
+    margin: 20px 0 30px;
+    opacity: .5;
+    transition: .3s;
+}
+
+.container p span {
+    font-size: 22px;
+    color: #161853;
+    margin-left: 38px;
+}
+
+.container p .fa-check {
+    opacity: 0;
+}
+
+.container p .fa-times {
+    opacity: 1;
+}
+
+.container p i {
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 18px;
+    border: 2px solid #161853;
+    border-radius: 50%;
+}
+
+.container .fa-eye,
+.container .fa-eye-slash {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 22px;
+    transform: translateX(260px) translateY(-34px);
+}
